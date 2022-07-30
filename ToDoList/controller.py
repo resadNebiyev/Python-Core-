@@ -22,7 +22,6 @@ def delete(position: int):
     # indices in UI begin at 1, but in database at 0
     delete_todo(position-1)
     show()
-
 @app.command()
 def update(position: int, task: str = None, category: str = None):
     typer.echo(f"updating {position}")

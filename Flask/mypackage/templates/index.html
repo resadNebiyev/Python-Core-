@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Backend Tədris Müddətinin Paketləri</h1>
+    <h3>Ümumi Paket 120 saatdır.Foundationda 'Python(Basic)' paketini bitirdiyindən sənin 100 saatlıq paketin qalır</h3>
+    <h3>'Python İntermediate 15 saat','Python Advanced - 20 Saat','SQL - 15 saat','Flask 20 saat','Django 30 saat'.</h3>
+    <h3>Dərsi Bitirdikdən Sonra Sayta Məlumat Yerləşdirin</h3>
+    <form action="/add">
+        <input type="text" name="p_name" id="" placeholder="Paketin Adı">
+        <input type="text" name="p_info" id="" placeholder="Dərs Haqqında Təəssurat">
+        <input type="submit" value="Daxil et">
+    </form>
+    <h3>Dərslər Haqqında Məlumat Almaq</h3>
+    <form action="/result">
+        <input type="submit" value="All Packages">
+    </form><br><br>
+    <form action="/python">
+        <input type="submit" value="SQL">
+    </form><br><br>
+    <form action="/Python(advanced)">
+        <input type="submit" value="Python(int)">
+    </form><br><br>
+    <form action="/sql">
+        <input type="submit" value="Python(Advanced)">
+    </form><br><br>
+    <form action="/flask">
+        <input type="submit" value="Flask">
+    </form><br><br>
+    <form action="/django">
+        <input type="submit" value="Django">
+    </form>
+    <h1>{{d}}</h1>
+    
+</body>
+</html>
