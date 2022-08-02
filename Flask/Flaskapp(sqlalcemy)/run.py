@@ -8,6 +8,11 @@ class Customers(db.Model):
     id = db.Column(db.Integer,primary_key=True,)
     name = db.Column(db.String(100))
     mess = db.Column(db.String(200))
+
+class Extra(db.Model):
+    id = db.Column(db.Integer,primary_key=True,)
+    e_name = db.Column(db.String(100))
+    e_mess = db.Column(db.String(200))
 @app.route('/')
 def home():
     name = request.args.get('u_name')

@@ -1,5 +1,3 @@
-from this import d
-from tkinter.messagebox import NO
 from flask import Flask, render_template, request
 import sqlite3
 d = 'Xəta Baş Verdi!'  
