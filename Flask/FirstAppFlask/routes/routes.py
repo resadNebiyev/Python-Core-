@@ -1,9 +1,8 @@
-from operator import index
 from flask  import redirect, render_template,request,flash
 from run import app
 app.secret_key = '_5#y2L"F4Q8z\n\xec]/'
 import sqlite3
-from model import User
+
 # @app.route('/',methods=['GET','POST'])
 # def index():
 #     return render_template('index.html')
@@ -15,8 +14,7 @@ def contact():
         username = request.form.get('u_name')
         usermail = request.form.get('u_email')
         usermessage = request.form.get('u_message')   
-        user=User(username,usermail,usermessage)
-        query = f"insert into User(username,usermail,message) values('{user.username}','{user.usermail}','{user.message}')"
+        query = f"insert into User(username,usermail,message) values('{username}','{usermail}','{usermessage}')"
         conn.execute(query)
         conn.commit()
         return render_template('index.html') 
